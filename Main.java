@@ -47,6 +47,15 @@ public class Main {
 		Minimum distance from B to C : 1.7976931348623157E308 (The Double.MAX_VALUE depends on your platform)
 		Shortest Path from B to C : []
 		*/
+
+
+		graph.reset();
+		startVertex = vertexA;
+		endVertex = vertexA;
+		
+		System.out.println("Minimum distance from " + startVertex.getName() + " to " + endVertex.getName() + " : " + graph.getShortestPathDistance(startVertex, endVertex));
+		System.out.println("Shortest Path from " + startVertex.getName() + " to " + endVertex.getName() + " : " + graph.getShortestPath(startVertex, endVertex));
+
 		
 	}
 }
